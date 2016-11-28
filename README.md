@@ -1,10 +1,8 @@
-Guidance to Draft Authors and Implementors on the Use of Randomness
-===================================================================
+# Guidance to Draft Authors and Implementors on the Use of Randomness
 
 This is the working area for draft-krose-randomness.
 
-Contributing
-------------
+## Contributing
 
 Although at this point the document is an individual draft, I am considering
 all work done here to fall under IETF rules. Consequently, be aware that all
@@ -31,15 +29,35 @@ These recommendations will change when and if this draft is adopted by a
 working group.
 
 
-Building The Draft
-------------------
+## Building The Draft
 
 You will need kramdown-rfc2629 (https://github.com/cabo/kramdown-rfc2629)
 and xml2rfc (https://xml2rfc.tools.ietf.org/).
 
 
-NOTE WELL
----------
+### kramdown-rfc2629
+
+The easiest way to install kramdown-rfc2629 is probably using the Ruby gem tool:
+
+```
+gem install kramdown-rfc2629
+```
+
+At least on MacOS Sierra, the system Ruby seems to be sufficient. If you are running an older release, you may need to install rbenv and get a newer version of Ruby, and for rbenv you may need to install homebrew or some other package manager.
+
+
+### xml2rfc
+
+The easiest way to install xml2rfc is the way they recommend on the [package index page](https://pypi.python.org/pypi/xml2rfc): use pip.
+
+```
+pip install xml2rfc
+```
+
+A big thank you to the folks who made these tools basically Just Work™.
+
+
+# NOTE WELL
 
 Any submission to the [IETF](https://www.ietf.org/) intended by the Contributor
 for publication as all or part of an IETF Internet-Draft or RFC and any
