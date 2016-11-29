@@ -2,3 +2,6 @@
 .ruby-version
 lib
 draft-krose-randomness.md
+.targets.mk
+draft-*.html
+draft-*.txt
