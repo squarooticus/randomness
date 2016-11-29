@@ -1,12 +1,9 @@
-DRAFTS=randomness
+include lib/main.mk
 
-all: $(addsuffix .html,$(DRAFTS)) $(addsuffix .txt,$(DRAFTS))
-
-%.xml: %.md
-	kramdown-rfc2629 $< >$@
-
-%.html: %.xml
-	xml2rfc --html $< -o $@
-
-%.txt: %.xml
-	xml2rfc --text $< -o $@
+lib/main.mk:
+ifneq (,$(shell git submodule status lib 2>/dev/null))
+	git submodule sync
+	git submodule update --init
+else
+	git clone -q --depth 10 -b master https://github.com/martinthomson/i-d-template.git lib
+endif

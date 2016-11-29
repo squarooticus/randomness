@@ -1,25 +1,4 @@
-# Guidance to Draft Authors and Implementors on the Use of Randomness
-
-This is the working area for the Individual internet-draft, "Guidance to Draft Authors and Implementors on the Use of Randomness".
-
-* [Editor's copy](https://squarooticus.github.io/randomness/)
-* [Individual Draft] (https://tools.ietf.org/html/draft-krose-randomness)
-* [Compare Individual Draft and Editor's copy] (https://tools.ietf.org/rfcdiff?url1=https://tools.ietf.org/id/draft-krose-randomness.txt?url2=https://squarooticus.github.io/{GITHUB_REPRO}/draft-krose-randomness.txt)
-
-
-## Building the Draft
-
-Formatted text and HTML versions of the draft can be built using `make`.
-
-```sh
-$ make
-```
-
-This requires that you have the necessary software installed.  See [the
-instructions](https://github.com/martinthomson/i-d-template/blob/master/doc/SETUP.md).
-
-
-## Contributing
+# Contributing
 
 Before submitting feedback, please familiarize yourself with our current issues
 list and review the [working group
