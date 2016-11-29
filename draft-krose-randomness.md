@@ -47,7 +47,25 @@ implementations.
 # Introduction
 
 The source for this draft is maintained in GitHub. Suggested changes should be
-submitted as pull requests at https://github.com/squarooticus/draft-randomness.
+submitted as pull requests at https://github.com/squarooticus/randomness.
 Instructions are on that page as well.
+
+# Protocol Designers
+
+## Key Derivation
+
+### HKDF
+
+### X9.82
+
+# Implementors
+
+## Entropy
+
+### Entropy Considerations
+
+### Entropy Sources
+
+# Security Considerations
 
 --- back
