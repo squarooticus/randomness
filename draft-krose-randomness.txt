@@ -1,0 +1,112 @@
+
+
+
+
+Network Working Group                                            K. Rose
+Internet-Draft                                 Akamai Technologies, Inc.
+Intended status: Best Current Practice                 November 28, 2016
+Expires: June 1, 2017
+
+
+  Guidance to Draft Authors and Implementors on the Use of Randomness
+                     draft-krose-randomness-latest
+
+Abstract
+
+   [RFC4086] is often cited as an informational reference by draft
+   authors, both as justification for protocol design elements and as a
+   reference to implementors for dealing with randomness, but the
+   sections directly related to the practical interests of designers and
+   implementors are difficult to find within a document with a much
+   broader potential audience.  Furthermore, at 11 years old, its
+   recommendations in our areas of concern are increasingly out-of-date.
+   This document attempts to provide brief and umambiguous guidance,
+   focused on the practicalities of employing randomness in protocols
+   and their implementations.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at http://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on June 1, 2017.
+
+Copyright Notice
+
+   Copyright (c) 2016 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+   (http://trustee.ietf.org/license-info) in effect on the date of
+   publication of this document.  Please review these documents
+
+
+
+Rose                      Expires June 1, 2017                  [Page 1]
+
+Internet-Draft             Randomness Guidance             November 2016
+
+
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+   2.  Informative References  . . . . . . . . . . . . . . . . . . .   2
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   2
+
+1.  Introduction
+
+   The source for this draft is maintained in GitHub.  Suggested changes
+   should be submitted as pull requests at
+   https://github.com/squarooticus/draft-randomness.  Instructions are
+   on that page as well.
+
+2.  Informative References
+
+   [RFC4086]  Eastlake 3rd, D., Schiller, J., and S. Crocker,
+              "Randomness Requirements for Security", BCP 106, RFC 4086,
+              DOI 10.17487/RFC4086, June 2005,
+              <http://www.rfc-editor.org/info/rfc4086>.
+
+Author's Address
+
+   Kyle Rose
+   Akamai Technologies, Inc.
+
+   EMail: krose@krose.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rose                      Expires June 1, 2017                  [Page 2]
