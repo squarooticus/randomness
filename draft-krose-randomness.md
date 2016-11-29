@@ -1,7 +1,7 @@
 ---
+docname: draft-krose-randomness-latest
 title: Guidance to Draft Authors and Implementors on the Use of Randomness
-abbrev: Randomness
-docname: draft-krose-randomness-00
+abbrev: Randomness Guidance
 category: bcp
 
 area: General
@@ -32,14 +32,15 @@ informative:
 
 --- abstract
 
-{{RFC4086}} is often cited as an informational reference by draft authors,
-both as justification for protocol design elements and as a reference to
-implementors for dealing with randomness, but in practice the sections directly
-related to the interests of the overwhelming majority of designers, reviewers,
-and implementors are hard to find within a broad survey of the field of
-information theory. Furthermore, its recommendations are increasingly outdated.
-This document attempts to provide brief and umambiguous guidance, focused on
-the practicalities of employing randomness in protocols.
+{{RFC4086}} is often cited as an informational reference by draft authors, both
+as justification for protocol design elements and as a reference to
+implementors for dealing with randomness, but the sections directly related to
+the practical interests of designers and implementors are difficult to find
+within a document with a much broader potential audience. Furthermore, at 11
+years old, its recommendations in our areas of concern are increasingly
+out-of-date. This document attempts to provide brief and umambiguous guidance,
+focused on the practicalities of employing randomness in protocols and their
+implementations.
 
 --- middle
 
