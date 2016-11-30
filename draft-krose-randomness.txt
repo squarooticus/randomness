@@ -4,8 +4,8 @@
 
 Network Working Group                                            K. Rose
 Internet-Draft                                 Akamai Technologies, Inc.
-Intended status: Best Current Practice                 November 28, 2016
-Expires: June 1, 2017
+Intended status: Best Current Practice                 November 30, 2016
+Expires: June 3, 2017
 
 
   Guidance to Draft Authors and Implementors on the Use of Randomness
@@ -13,16 +13,16 @@ Expires: June 1, 2017
 
 Abstract
 
-   [RFC4086] is often cited as an informational reference by draft
-   authors, both as justification for protocol design elements and as a
+   [RFC4086] is often cited as an informational reference by protocol
+   designers, both as justification for design elements and as a
    reference to implementors for dealing with randomness, but the
    sections directly related to the practical interests of designers and
    implementors are difficult to find within a document with a much
    broader potential audience.  Furthermore, at 11 years old, its
-   recommendations in our areas of concern are increasingly out-of-date.
-   This document attempts to provide brief and umambiguous guidance,
-   focused on the practicalities of employing randomness in protocols
-   and their implementations.
+   recommendations in our areas of concern have diverged from best
+   current practice.  This document attempts to provide brief and
+   umambiguous guidance, focused on the practicalities of employing
+   randomness in protocols and their implementations.
 
 Status of This Memo
 
@@ -39,7 +39,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on June 1, 2017.
+   This Internet-Draft will expire on June 3, 2017.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Rose                      Expires June 1, 2017                  [Page 1]
+Rose                      Expires June 3, 2017                  [Page 1]
 
 Internet-Draft             Randomness Guidance             November 2016
 
@@ -67,17 +67,84 @@ Internet-Draft             Randomness Guidance             November 2016
 Table of Contents
 
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
-   2.  Informative References  . . . . . . . . . . . . . . . . . . .   2
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   2
+   2.  Background  . . . . . . . . . . . . . . . . . . . . . . . . .   2
+     2.1.  Principles of efficiently generating randomness . . . . .   2
+       2.1.1.  Non-deterministic seeding: entropy  . . . . . . . . .   2
+       2.1.2.  Deterministic uniform bit generator . . . . . . . . .   2
+   3.  Protocol designers  . . . . . . . . . . . . . . . . . . . . .   3
+     3.1.  Specifying properties related to randomness . . . . . . .   3
+       3.1.1.  Unpredictability  . . . . . . . . . . . . . . . . . .   3
+       3.1.2.  Unlinkability . . . . . . . . . . . . . . . . . . . .   3
+     3.2.  Applications of randomness  . . . . . . . . . . . . . . .   3
+       3.2.1.  Key derivation  . . . . . . . . . . . . . . . . . . .   3
+     3.3.  Implementation considerations . . . . . . . . . . . . . .   3
+       3.3.1.  Robustness to low entropy . . . . . . . . . . . . . .   3
+   4.  Implementors  . . . . . . . . . . . . . . . . . . . . . . . .   3
+     4.1.  Randomness generators . . . . . . . . . . . . . . . . . .   3
+       4.1.1.  Entropy-backed PRNGs  . . . . . . . . . . . . . . . .   3
+       4.1.2.  Operating System Services . . . . . . . . . . . . . .   3
+   5.  Security Considerations . . . . . . . . . . . . . . . . . . .   3
+   6.  Informative References  . . . . . . . . . . . . . . . . . . .   3
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   3
 
 1.  Introduction
 
    The source for this draft is maintained in GitHub.  Suggested changes
    should be submitted as pull requests at
-   https://github.com/squarooticus/draft-randomness.  Instructions are
-   on that page as well.
+   https://github.com/squarooticus/randomness.  Instructions are on that
+   page as well.
 
-2.  Informative References
+2.  Background
+
+2.1.  Principles of efficiently generating randomness
+
+2.1.1.  Non-deterministic seeding: entropy
+
+2.1.2.  Deterministic uniform bit generator
+
+
+
+
+
+
+
+
+Rose                      Expires June 3, 2017                  [Page 2]
+
+Internet-Draft             Randomness Guidance             November 2016
+
+
+3.  Protocol designers
+
+3.1.  Specifying properties related to randomness
+
+3.1.1.  Unpredictability
+
+3.1.2.  Unlinkability
+
+3.2.  Applications of randomness
+
+3.2.1.  Key derivation
+
+3.2.1.1.  HKDF
+
+3.2.1.2.  X9.82
+
+3.3.  Implementation considerations
+
+3.3.1.  Robustness to low entropy
+
+4.  Implementors
+
+4.1.  Randomness generators
+
+4.1.1.  Entropy-backed PRNGs
+
+4.1.2.  Operating System Services
+
+5.  Security Considerations
+
+6.  Informative References
 
    [RFC4086]  Eastlake 3rd, D., Schiller, J., and S. Crocker,
               "Randomness Requirements for Security", BCP 106, RFC 4086,
@@ -98,15 +165,4 @@ Author's Address
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-Rose                      Expires June 1, 2017                  [Page 2]
+Rose                      Expires June 3, 2017                  [Page 3]
